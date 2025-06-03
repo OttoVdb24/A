@@ -1,0 +1,194 @@
+<!DOCTYPE html><html lang=nl><script type=module src=Massieve_kist.626d928d.js></script><meta name=viewport content="width=device-width, initial-scale=1.0"><title>Mariasteen kisten en paletten</title><link rel=stylesheet href=Massieve_kist.b1f0b7a5.css><script defer src=Massieve_kist.44d3499e.js></script><script type=module src=Krat_toe.b43fea0a.js></script><input type=hidden id=productType value=Krat_toe>
+
+
+
+    <nav>
+        <a href=index.html>
+             <img src=MariaSteen_M.fbd555b1.png alt="Mariasteen Logo">
+        </a>
+    </nav>
+
+<main>
+  <div id=canvas-container>
+    <canvas></canvas>
+  </div>
+</main>
+
+<aside class=sidebar>
+<h1>Afmetingen:</h1>
+    <div class=options-container>
+      <div class=slider-group>
+        <label for=LengteSlider>Lengte:</label>
+        <input id=LengteSlider type=range min=300 max=3990 value=2000 step=1>
+        <input id=LengteInput type=number min=300 max=3990 value=2000 step=10> mm
+      </div>
+      <div class=slider-group>
+        <label for=BreedteSlider>Breedte:</label>
+        <input id=BreedteSlider type=range min=200 max=3990 value=800 step=1>
+        <input id=BreedteInput type=number min=200 max=3990 value=800 step=1> mm
+      </div>
+      <div class=slider-group>
+        <label for=HoogteSlider>Hoogte:</label>
+        <input id=HoogteSlider type=range min=100 max=3990 value=600 step=1>
+        <input id=HoogteInput type=number min=100 max=3990 value=600 step=1> mm
+      </div>
+    </div>
+
+    
+
+    
+
+  <h1>Opties:</h1>
+  <div class=options-container>
+      
+        <label><input id=ISPMCheck type=checkbox> Hittebehandeld
+         <span class=info-icon>?
+          <div class=tooltip>ISPM-15 hittebehandeling is verplicht voor export buiten de EU en Turkije.</div>
+          </span>
+        </label>
+     
+   
+        <label><input id=ZeeWaaCheck type=checkbox> Kunstof folie 
+         <span class=info-icon>?
+           <div class=tooltip>Kunstof folie beschermt de inhoud tegen vocht, aangeraden bij transport over zee.</div>
+         </span>
+        </label>
+    
+
+  </div>
+
+    <h1>Geavanceerde opties:</h1>
+    <div class=options-container>
+      <label><input type=checkbox id=KeperAfstandCheck>Kepers instellen</label>
+      <div class=slider-group>
+        <label for=KeperAantalInput>Aantal:</label>
+        <input id=KeperAantalInput type=number value=2 min=2 max=10>
+      </div>
+      <div class=slider-group>
+        <label for=KeperAfstandSlider>Keper afstand:</label>
+        <input id=KeperAfstandSlider type=range min=100 max=4000 value=2060 step=10>
+        <input id=KeperAfstandInput type=number min=100 max=4000 value=2060 step=10> mm
+      </div>
+    </div>
+
+    <div class=options-container>
+      <div class=slider-group>
+        <label for=DekPlankenInput>Aantal dekplanken:
+          <input id=DekPlankenInput type=number value=4 min=2 max=10>
+        </label>
+      </div>
+    </div>
+
+
+    <div class=options-container>
+      <label><input type=checkbox id=DekselVerbergenCheck>Deksel verbergen</label>
+    </div>
+
+</aside>
+
+<aside class=sidebar-right>
+
+        <h1>Qty:</h1>
+    <div class=options-container>
+      <label><input id=Oplage type=number value=1 min=1 max=100></label>
+    </div>
+
+    <h1>Contact:</h1>
+    <div class=options-container>
+      <form>
+        <input id=fname name=Voornaam placeholder=Voornaam><br>
+        <input id=lname name=Achternaam placeholder=Achternaam><br>
+        <input id=Bedrijf name=Bedrijf placeholder=Bedrijf><br>
+        <input id=Nummer name=Telefoonnummer placeholder=Telefoonnummer><br>
+        <input type=email id=Mail name=E-mailadres placeholder=E-mailadres><br>
+      </form>
+    </div>
+
+    <h1>Toevoegingen:</h1>
+    <div class=options-container>
+      <textarea id=opmerkingen name=opmerkingen placeholder=Toevoeging style=height:200px></textarea>
+    </div>
+
+<div class=Mail>
+  <button type=button onclick=OpenPopup()>Aanvraag indienen</button>
+
+  <div class=MailPopup id=popup>
+    
+    <h1>Aanvraag indienen</h1><br>
+    <hr>
+    <div class=info>
+    <p1>Door uw aanvraag in te dienen, gaat u akkoord met onze algemene voorwaarden.
+       Uw standaard e-mailprogramma wordt geopend om de bestelling te verzenden – gelieve hier niets aan te wijzigen.
+      U ontvangt een reactie binnen [aantal] werkdagen.
+    </p1>
+    </div>
+        <div class=info>
+    <p1>Indien u beschikt over een model van de vracht, mag u deze meegeven in bijlage van de mail.
+    </p1>
+    </div>
+    <hr>
+    <p>Downloads</p>
+    <div class=info>
+      <a href=up_/doc/NL%20-%20VZW%20MARIASTEEN%20-%20algemene%20voorwaarden%20productie_4.pdf>NL - VZW MARIASTEEN - algemene voorwaarden productie</a><br>
+      <a href=up_/doc/EN%20-%20VZW%20MARIASTEEN%20-%20general%20terms%20and%20conditions%20production_4.pdf>FR - VZW MARIASTEEN - conditions générales production</a><br>
+      <a href=up_/doc/FR%20-%20VZW%20MARIASTEEN%20-%20conditions%20générales%20production_4.pdf>EN - VZW MARIASTEEN - general terms and conditions production</a><br>
+   
+    </div>
+  <div class=info>
+    <button type=button class=bevestig onclick=SendMail()>Bevestig</button>
+    <button type=button class=terug onclick=ClosePopup()>Terug</button>
+  </div>
+</div>
+
+    <script>let popup=document.getElementById("popup");function OpenPopup(){popup.classList.add("open-popup")}function ClosePopup(){popup.classList.remove("open-popup")}function SendMail(){alert("Mail verzonden!"),ClosePopup()}</script>
+
+
+    </div>
+
+
+   
+    </aside>
+
+     <section>
+
+    <div class=section>
+        <h1>Informatie:</h1>
+
+        <h3>Buiten afmetingen:</h3>
+        <div class=options-container>
+        
+             Lengte: <span id=LLengte></span> mm <br>
+      
+             Breedte: <span id=BBreedte></span> mm <br>
+         
+             Hoogte: <span id=HHoogte></span> mm <br>
+
+        </div>
+
+        <h3>Hefpening:   
+        <span class=info-icon>?
+        <div class=tooltip></div>
+        </span> 
+        </h3>
+
+        <div class=options-container>
+          <span id=KeperHefAfstand></span> mm
+          <img src=IconTest.b7f7a556.png>
+        </div>
+
+    
+
+      
+
+    </div>
+    </section>
+
+
+
+
+
+  <script>let sliders=["Lengte","Breedte","Hoogte","KeperAfstand"];sliders.forEach(e=>{let t=document.getElementById(`${e}Slider`),d=document.getElementById(`${e}Input`);t.addEventListener("input",()=>d.value=t.value),d.addEventListener("input",()=>t.value=d.value)});</script>
+
+
+
+

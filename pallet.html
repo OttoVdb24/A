@@ -1,0 +1,210 @@
+<!DOCTYPE html><html lang=en><script type=module src=Massieve_kist.626d928d.js></script><meta name=viewport content="width=device-width, initial-scale=1.0"><title>Mariasteen kisten en paletten</title><link rel=stylesheet href=Massieve_kist.b1f0b7a5.css><script defer src=Massieve_kist.44d3499e.js></script><script type=module src=pallet.c31de93f.js></script><input type=hidden id=productType value=Pallet-4wegs>
+  
+
+
+    <nav>
+        <a href=index.html>
+             <img src=MariaSteen_M.fbd555b1.png alt="Mariasteen Logo">
+        </a>
+    </nav>
+
+<main>
+  <div id=canvas-container>
+    <canvas></canvas>
+  </div>
+</main>
+
+<aside class=sidebar>
+<h1>Uitvoering:</h1>
+   
+  <div class=options-container>
+    <select name=Uitvoering id=Uitvoering>
+      <option value=Light>Licht (15x75)</option>
+      <option value=Medium>Medium (18x100)</option>
+      <option value=Heavy>Zwaar (22x100)</option>
+    </select>
+  </div>
+
+<h1>Afmetingen:</h1>
+  
+  <div class=options-container>
+  
+    <div class=slider-group>
+      <label for=LengteSlider>Lengte:</label>
+      <input id=LengteSlider type=range min=200 max=2800 value=1200 step=10>
+      <input id=LengteInput type=number min=200 max=2800 value=1200 step=10>
+    </div>
+
+    <div class=slider-group>
+      <label for=BreedteSlider>Breedte:</label>
+      <input id=BreedteSlider type=range min=200 max=2800 value=800 step=10>
+      <input id=BreedteInput type=number min=200 max=2800 value=800 step=10>
+    </div>
+
+ 
+  </div>
+
+<h1>Opties:</h1>
+<div class=options-container>
+         <label><input id=ISPMCheck type=checkbox> Hittebehandeld
+         <span class=info-icon>?
+          <div class=tooltip>ISPM-15 hittebehandeling is verplicht voor export buiten de EU en Turkije.</div>
+          </span>
+        </label>
+</div>
+
+<h1>Aantal planken:</h1>
+<div class=options-container>
+
+     <div class=slider-group>
+      <label for=BovenPlankenInput>Dekplanken:</label>
+      <input id=DekPlankenInput type=number value=6 min=2>
+    </div>
+
+     <div class=slider-group>
+      <label for=TussenlatSlider>Tussenplanken:</label>
+      <input id=TussenPlankenInput type=number min=2 max=10 value=3 step=1>
+    </div>
+  
+    <div class=slider-group>
+      <label for=onderlatSlider>Bodemplanken:</label>
+      <input id=BodemPlankenInput type=number min=2 max=10 value=3 step=1>
+    </div>
+
+</div>
+
+<h1>Dek Opties:</h1>
+<div class=options-container>
+
+    <div class=radio-container>
+    <label class=radio-option>
+      <input type=radio id=OptieDekPlanken name=dek checked>
+      Planken
+    </label>
+
+  </div>
+
+</div>
+
+<div class=options-container>
+
+  <div class=radio-container>
+    <label class=radio-option>
+      <input type=radio id=OptieDekPlaat name=dek>
+      Plaat
+    </label>
+
+    <div class=plaat-type>
+      <label for=PlaatTypeSelect>Plaattype: 
+      
+      <select id=PlaatTypeSelect>
+        <option value=osb>OSB</option>
+        <option value=multiplex>Multiplex</option>
+        <option value=betonplex>Betonplex</option>
+      </select>
+    
+    </label>
+      
+    </div>
+  </div>
+</div>
+</aside>
+
+<aside class=sidebar-right>
+
+        <h1>Aantal:</h1>
+    <div class=options-container>
+      <label><input id=Oplage type=number value=1 min=1 max=100></label>
+    </div>
+
+    <h1>Contactgegevens:</h1>
+    <div class=options-container>
+      <form>
+        <input id=fname name=Voornaam placeholder=Voornaam><br>
+        <input id=lname name=Achternaam placeholder=Achternaam><br>
+        <input id=Bedrijf name=Bedrijf placeholder=Bedrijf><br>
+        <input id=Nummer name=Telefoonnummer placeholder=Telefoonnummer><br>
+        <input type=email id=Mail name=E-mailadres placeholder=E-mailadres><br>
+      </form>
+    </div>
+
+    <h1>Toevoegingen:</h1>
+    <div class=options-container>
+      <textarea id=opmerkingen name=opmerkingen placeholder=Toevoeging style=height:100px></textarea>
+    </div>
+        <h1>Gewenste levertermijn:</h1>
+    <div class=options-container>
+      <textarea id=levertermijn name=levertermijn placeholder=levertermijn style=height:50px></textarea>
+    </div>
+
+<div class=Mail>
+  <button type=button onclick=OpenPopup()>Aanvraag indienen</button>
+
+  <div class=MailPopup id=popup>
+    
+    <h1>Aanvraag indienen</h1><br>
+    <h2>Vervolg van uw aanvraag</h2>
+    <div class=info>
+    <p1>Uw standaard e-mailprogramma wordt geopend om de bestelling te verzenden – gelieve aan de mail niets te wijzigen. <br><br>
+      Wij verwerken uw aanvraag zo snel mogelijk en nemen contact met u op.
+    </p1>
+    </div>
+        <div class=info>
+    <p1>Indien u beschikt over een 3D-model van de vracht, mag u deze meegeven in bijlage van de mail.
+    </p1>
+    </div>
+    <hr>
+    <h2>Algemene voorwaarden</h2>
+    <div class=info>
+      Door uw aanvraag in te dienen, gaat u akkoord met onze algemene voorwaarden. <br><br>
+      <a href=up_/doc/NL%20-%20VZW%20MARIASTEEN%20-%20algemene%20voorwaarden%20productie_4.pdf>NL - VZW MARIASTEEN - algemene voorwaarden productie</a><br>
+      <a href=up_/doc/EN%20-%20VZW%20MARIASTEEN%20-%20general%20terms%20and%20conditions%20production_4.pdf>FR - VZW MARIASTEEN - conditions générales production</a><br>
+      <a href=up_/doc/FR%20-%20VZW%20MARIASTEEN%20-%20conditions%20générales%20production_4.pdf>EN - VZW MARIASTEEN - general terms and conditions production</a><br>
+   
+    </div>
+  <div class=info>
+    <button type=button class=terug onclick=ClosePopup()>Terug</button>
+    <button type=button class=bevestig onclick=SendMail()>Bevestig</button>
+  </div>
+</div>
+
+
+    <script>let popup=document.getElementById("popup");function OpenPopup(){popup.classList.add("open-popup")}function ClosePopup(){popup.classList.remove("open-popup")}function SendMail(){alert("Mail verzonden!"),ClosePopup()}</script>
+
+
+    </div>
+
+
+   
+    </aside>
+
+
+
+    <section>
+    <div class=section>
+        <h1>Informatie</h1>
+
+ 
+
+        <h3>Opening dwars en langs:</h3>
+        <div class=options-container>
+
+        <span id=OpeningDwars></span> mm
+        <span id=OpeningLangs></span> mm
+
+
+        </div>
+
+   
+
+      
+
+    </div>
+    </section>
+
+
+
+    <script>let sliders=["Lengte","Breedte"];sliders.forEach(e=>{let t=document.getElementById(`${e}Slider`),d=document.getElementById(`${e}Input`);t.addEventListener("input",()=>{d.value=t.value}),d.addEventListener("input",()=>{t.value=d.value})});</script>
+
+
+
